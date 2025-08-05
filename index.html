@@ -34,18 +34,38 @@
       }
     }
     .hero {
-      display: flex;
-      flex-wrap: wrap;
-      align-items: center;
-      justify-content: space-between;
-      padding: 50px 0;
-    }
-    .hero-text {
-      max-width: 600px;
-      animation-delay: 0.2s;
-    }
-    .hero-image {
-      animation-delay: 0.4s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.hero img {
+  max-width: 300px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.5);
+}
+
+.hero-text {
+  max-width: 400px;
+}
+
+.hero button {
+  background: #3533cd;
+  color: #fff;
+  padding: 15px 25px;
+  border: none;
+  border-radius: 6px;
+  font-size: 18px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.hero button:hover {
+  background: #fff;
+  color: #3533cd;
+}
     }
     button {
       background: #3533cd;
@@ -118,9 +138,9 @@
   </style>
 </head>
 <body>
-  <section class="hero container fade-in hero-text">
-    <div>
-      <h1>Aprenda Inglês do Zero com Clareza e Confiança!</h1>
+  <section class="hero container">
+  <img src="ebook-mockup.png" alt="Mockup eBook">
+  <div class="hero-text">
       <p>Guia prático e direto para quem quer aprender inglês americano do jeito certo – sem enrolação.</p>
       <a href="https://pay.kiwify.com.br/QZohe3o" target="_blank"><button>Baixar agora por R$ 19,90</button><a/>
     </div>
@@ -167,3 +187,4 @@
   </section>
 </body>
 </html>
+
